@@ -1,7 +1,47 @@
 #title{
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
     font-family: 'sketch_matchregular';
-    font-size: 40px;
+    font-size: 50px;
+}
+input[type=range]{
+    -webkit-appearance: none;
+    margin-bottom: 5px;
+    height: 10px;
+    appearance: none;
+    border-radius: 5px;
+    background-color: black;
+}
+
+#slider::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: white;
+    border: black;
+    border-style: solid;
+  }
+  
+#slider::-ms-range-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: white;
+    border: black;
+    border-style: solid;
+}
+  
+#slider::-webkit-slider-thumb{
+    all:unset; 
+    -webkit-appearance: none;
+    border: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: white;
+    border: black;
+    border-style: solid;
 }
 
 #canva{
@@ -10,7 +50,9 @@
     width: 500px;
     border-color: black;
     border-style: solid;
+    border-width: 5px;
     display: grid;
+    background-color:#9fa263 ;
 }
 
 .cell{
@@ -22,6 +64,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: white;
 }
 
 @font-face{
