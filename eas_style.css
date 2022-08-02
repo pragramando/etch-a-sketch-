@@ -1,0 +1,22 @@
+#title{
+    text-align: center;
+}
+
+#canva{
+    border: 2px;
+    height: 500px;
+    width: 500px;
+    border-color: black;
+    border-style: solid;
+}
+
+.cell{
+    border: 1px;
+    border-style: solid;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
