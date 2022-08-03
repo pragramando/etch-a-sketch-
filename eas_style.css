@@ -4,7 +4,37 @@
     margin-bottom: 10px;
     font-family: 'sketch_matchregular';
     font-size: 50px;
+    grid-column-start: 5;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 1;  
 }
+
+#rainbowBtn{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 4;  
+}
+
+#eraserBtn{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 5; 
+}
+
+#colorSelector{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    background-color: white;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;    
+}
+
 input[type=range]{
     -webkit-appearance: none;
     margin-bottom: 5px;
@@ -12,6 +42,10 @@ input[type=range]{
     appearance: none;
     border-radius: 5px;
     background-color: black;
+    grid-column-start: 6;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 2;
 }
 
 #slider::-moz-range-thumb {
@@ -52,7 +86,10 @@ input[type=range]{
     border-style: solid;
     border-width: 5px;
     display: grid;
-    background-color:#9fa263 ;
+    grid-column-start: 5;
+    grid-column-end: 12;
+    grid-row-start: 3;
+    grid-row-end: 7;
 }
 
 .cell{
@@ -61,12 +98,18 @@ input[type=range]{
 }
 
 body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
     background-color: white;
+    grid-row-gap: 5px;
 }
 
+button{
+    background-color: white;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    font-weight: bold;
+}
 @font-face{
     font-family: 'sketch_matchregular';
     src: url('font/sketch_match-webfont.eot');
